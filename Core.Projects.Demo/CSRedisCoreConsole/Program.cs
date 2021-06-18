@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CSRedisCoreConsole
@@ -11,12 +12,29 @@ namespace CSRedisCoreConsole
     {
         static async Task Main(string[] args)
         {
-            var builder = new HostBuilder().ConfigureServices((context, service) =>
+            RedisQueue();
+        }
+
+
+        public static void RedisQueue()
+        {
+            var rds = new CSRedis.CSRedisClient("10.0.0.236:6388,password=nanjing123,defaultDatabase=6,poolsize=50");
+            RedisHelper.Initialization(rds);
+
+            //普通订阅
+            rds.Subscribe(
+              ("topic_ctrlMsg", msg => Console.WriteLine("1|"+msg.Body))
+             );
+
+            rds.Subscribe(
+              ("topic_ctrlMsg", msg => Console.WriteLine("2|"+msg.Body))
+             );
+
+            for (int i = 0; i < 10; i++)
             {
-
-            });
-
-            await builder.RunConsoleAsync();
+                rds.Publish("topic_ctrlMsg", "{'a':100}");
+                Thread.Sleep(5000);
+            }
         }
 
 

@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackgroundInConsole", "Back
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSRedisCoreConsole", "CSRedisCoreConsole\CSRedisCoreConsole.csproj", "{234B487E-CAD4-4BC9-A274-1A2DC310DECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCoreWebAnalysis", "NetCoreWebAnalysis\NetCoreWebAnalysis.csproj", "{4E1294FD-46B1-4334-89D8-321C95651CC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreWebAnalysis", "NetCoreWebAnalysis\NetCoreWebAnalysis.csproj", "{4E1294FD-46B1-4334-89D8-321C95651CC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketConsole", "WebSocketConsole\WebSocketConsole.csproj", "{B4212E92-4911-4BD5-BB93-848A1F6300BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RRQM.TcpServer", "RRQM.TcpServer\RRQM.TcpServer.csproj", "{13272F8C-F608-4600-B1F6-7FB0002A76F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketConsole", "SocketConsole\SocketConsole.csproj", "{0C459A4F-0568-412E-8316-4691B6549E6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{4E1294FD-46B1-4334-89D8-321C95651CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E1294FD-46B1-4334-89D8-321C95651CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E1294FD-46B1-4334-89D8-321C95651CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4212E92-4911-4BD5-BB93-848A1F6300BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4212E92-4911-4BD5-BB93-848A1F6300BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4212E92-4911-4BD5-BB93-848A1F6300BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4212E92-4911-4BD5-BB93-848A1F6300BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13272F8C-F608-4600-B1F6-7FB0002A76F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13272F8C-F608-4600-B1F6-7FB0002A76F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13272F8C-F608-4600-B1F6-7FB0002A76F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13272F8C-F608-4600-B1F6-7FB0002A76F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C459A4F-0568-412E-8316-4691B6549E6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C459A4F-0568-412E-8316-4691B6549E6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C459A4F-0568-412E-8316-4691B6549E6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C459A4F-0568-412E-8316-4691B6549E6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
